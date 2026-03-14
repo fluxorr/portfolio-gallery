@@ -24,3 +24,15 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+.font-noto-serif-display {
+  font-family: var(--font-noto-serif-display), serif;
+}
+
+.font-noto-sans {
+  font-family: var(--font-noto-sans), sans-serif;
+}
+
+.font-manrope {
+  font-family: var(--font-manrope), sans-serif;
+}

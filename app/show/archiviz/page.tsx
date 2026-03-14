@@ -1,11 +1,17 @@
-import React from 'react'
+import Hero from "./Hero"
+import Navbar from "./Navbar"
 
-import Button from './Button'
 
 const Archiviz = () => {
+
+
     return (
-        <div >
-            <Button />
+        <div className='' >
+
+
+            <Navbar />
+            <Hero />
+
         </div >
     )
 }
