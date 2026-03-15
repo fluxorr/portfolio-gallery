@@ -10,7 +10,7 @@ const Hero = () => {
                     url('${BGImage.src}')
                 `,
             }}
-            className="fixed top-0 left-0 w-full h-screen bg-cover bg-center -z-10 "
+            className=" w-full h-screen bg-cover bg-center -z-10 "
         >
             <div className="flex justify-center items-center h-screen text-center flex-col" >
                 <p className="font-noto-serif-display text-7xl tracking-tight " >

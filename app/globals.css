@@ -36,3 +36,7 @@ body {
 .font-manrope {
   font-family: var(--font-manrope), sans-serif;
 }
+
+.font-pt-serif {
+  font-family: var(--font-pt-serif), serif;
+}
