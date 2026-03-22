@@ -3,23 +3,25 @@ import ImageOne from "./assets/Image1.png"
 import ImageTwo from "./assets/Image2.png"
 import { Check } from "lucide-react"
 
-
-
-
 const CardOne = () => {
     return (
-        <div className="py-32 flex flex-row justify-center items-center w-full">
-            <div className="flex justify-center items-center w-137.5 border p-3 border-neutral-400/20 rounded-2xl ">
-                <Image src={ImageOne.src} height={550} width={550} alt="Photorealism" />
+        <div className="py-16 lg:py-32 flex flex-col lg:flex-row justify-center items-center w-full gap-8 lg:gap-0 px-4 sm:px-6 lg:px-0">
+            <div className="flex justify-center items-center w-full max-w-137.5 border p-3 border-neutral-400/20 rounded-2xl">
+                <Image src={ImageOne} alt="Photorealism" className="w-full h-auto rounded-xl" priority={false} />
             </div>
-            <div className="flex flex-col justify-center items-start max-w-lg ml-12">
-                <p className="uppercase font-manrope text-xs font-semibold text-neutral-500 tracking-wider" > Unmatched Quality </p>
-                <p className="text-[40px]  py-2 font-pt-serif " >Photorealistic Rendering</p>
-                <p className="text-balanc text-neutral-500 mb-4" > Our advanced AI engine interprets CAD data and hand sketches to produce stunning, high-fidelity visualizations. Achieve cinema-quality lighting and depth that captures every detail of your architectural design. </p>
-                <p className="flex flex-row gap-2 text-neutral-500 items-center py-2 text-xs" ><Check className="text-white" size={16} />
+
+            <div className="flex flex-col justify-center items-start max-w-lg lg:ml-12">
+                <p className="uppercase font-manrope text-xs font-semibold text-neutral-500 tracking-wider">Unmatched Quality</p>
+                <p className="text-3xl lg:text-[40px] py-2 font-pt-serif">Photorealistic Rendering</p>
+                <p className="text-balance text-neutral-500 mb-4">
+                    Our advanced AI engine interprets CAD data and hand sketches to produce stunning, high-fidelity visualizations. Achieve cinema-quality lighting and depth that captures every detail of your architectural design.
+                </p>
+                <p className="flex flex-row gap-2 text-neutral-500 items-center py-2 text-xs">
+                    <Check className="text-white" size={16} />
                     8K Resolution Output
                 </p>
-                <p className="flex flex-row gap-2 text-neutral-500 items-center text-xs" ><Check className="text-white" size={16} />
+                <p className="flex flex-row gap-2 text-neutral-500 items-center text-xs">
+                    <Check className="text-white" size={16} />
                     Automated Post-Processing
                 </p>
             </div>
@@ -27,34 +29,28 @@ const CardOne = () => {
     )
 }
 
-
-
-
-
 const CardTwo = () => {
     return (
-        <div className="py-32 flex flex-row justify-center items-center w-full">
-
-            <div className="flex flex-col justify-center items-start max-w-lg px-4 ml-12">
-                <p className="uppercase font-manrope text-xs font-semibold text-neutral-500 tracking-wider" >  Intelligent Textures  </p>
-                <p className="text-[40px]  py-2 font-pt-serif " >AI Material Synthesis</p>
-                <p className="text-balanc text-neutral-500 mb-4" >  Don&apos;t spend hours hunting for textures. Describe the surface you want, and our AI generates physically accurate PBR materials including bump, gloss, and reflection maps.  </p>
-                <button className="text-xs bg-neutral-800/60 px-4 py-2 rounded-full cursor-pointer "  >Learn about PBR AI</button>
-            </div>
-            <div className="flex justify-center items-center w-137.5 border p-3 border-neutral-400/20 rounded-2xl ">
-                <Image src={ImageTwo.src} height={550} width={550} alt="Material Synthesis" />
+        <div className="py-16 lg:py-32 flex flex-col lg:flex-row justify-center items-center w-full gap-8 lg:gap-0 px-4 sm:px-6 lg:px-0">
+            <div className="order-2 lg:order-1 flex flex-col justify-center items-start max-w-lg lg:px-4 lg:ml-12">
+                <p className="uppercase font-manrope text-xs font-semibold text-neutral-500 tracking-wider">Intelligent Textures</p>
+                <p className="text-3xl lg:text-[40px] py-2 font-pt-serif">AI Material Synthesis</p>
+                <p className="text-balance text-neutral-500 mb-4">
+                    Don&apos;t spend hours hunting for textures. Describe the surface you want, and our AI generates physically accurate PBR materials including bump, gloss, and reflection maps.
+                </p>
+                <button className="text-xs bg-neutral-800/60 px-4 py-2 rounded-full cursor-pointer">Learn about PBR AI</button>
             </div>
 
+            <div className="order-1 lg:order-2 flex justify-center items-center w-full max-w-137.5 border p-3 border-neutral-400/20 rounded-2xl">
+                <Image src={ImageTwo} alt="Material Synthesis" className="w-full h-auto rounded-xl" priority={false} />
+            </div>
         </div>
     )
 }
 
-
-
-
 const CardSection = () => {
     return (
-        <div className="bg-neutral-950 " >
+        <div className="bg-neutral-950">
             <CardOne />
             <div className="w-full h-px bg-neutral-400/10" />
             <CardTwo />
