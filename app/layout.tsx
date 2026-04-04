@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import {
   Geist,
   Geist_Mono,
+  Hachi_Maru_Pop,
   Noto_Serif_Display,
   Noto_Sans,
   Manrope,
@@ -17,6 +18,12 @@ const geistSans = Geist({
 const geistMono = Geist_Mono({
   variable: "--font-geist-mono",
   subsets: ["latin"],
+});
+
+const hachi = Hachi_Maru_Pop({
+  variable: "--font-hachi",
+  subsets: ["latin"],
+  weight: "400",
 });
 
 const notoSerifDisplay = Noto_Serif_Display({
@@ -54,7 +61,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} ${notoSerifDisplay.variable} ${notoSans.variable} ${manrope.variable} ${ptSerif.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} ${hachi.variable} ${notoSerifDisplay.variable} ${notoSans.variable} ${manrope.variable} ${ptSerif.variable} antialiased`}
       >
         {children}
       </body>
