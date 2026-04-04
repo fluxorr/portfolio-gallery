@@ -6,7 +6,7 @@ const Links = [
     name: "Relia", href: "/show/relia"
   },
   {
-    name: "{}", href: "/show/"
+    name: "Astraia", href: "/show/astraia"
   }
 ]
 
