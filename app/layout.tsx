@@ -7,8 +7,15 @@ import {
   Noto_Sans,
   Manrope,
   PT_Serif,
+  Inter,
+  Playfair_Display,
 } from "next/font/google";
 import "./globals.css";
+import { cn } from "@/lib/utils";
+import ThemeToggle from "@/components/ThemeToggle";
+
+const inter = Inter({ subsets: ['latin'], variable: '--font-sans' });
+const playfair = Playfair_Display({ subsets: ['latin'], variable: '--font-playfair' });
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -59,11 +66,12 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" className={cn("font-sans", inter.variable)}>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} ${hachi.variable} ${notoSerifDisplay.variable} ${notoSans.variable} ${manrope.variable} ${ptSerif.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} ${hachi.variable} ${notoSerifDisplay.variable} ${notoSans.variable} ${manrope.variable} ${ptSerif.variable} ${playfair.variable} antialiased`}
       >
         {children}
+        <ThemeToggle />
       </body>
     </html>
   );

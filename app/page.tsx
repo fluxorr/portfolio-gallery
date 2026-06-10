@@ -1,6 +1,5 @@
 import Link from "next/link"
 
-
 const Links = [
   {
     name: "Relia", href: "/show/relia"
@@ -12,12 +11,19 @@ const Links = [
   },
   {
     name: "Interactive Mail", href: '/show/interactive-mail'
+  },
+  {
+    name: "Cards", href: '/show/cards'
   }
 ]
 
 const Home = () => {
   return (
+
     <div className="flex justify-center items-center   h-screen selection:bg-white selection:text-black" >
+
+
+
       <div className="flex  flex-row " >
         <div className="text-5xl flex items-center p-8 -ml-64  leading-16 text-balance" >Fluxorr</div>
 
